@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Мы предлагаем качественные услуги по разработке сайтов и мобильных приложений. Опытные специалисты, современные технологии, гарантия качества.">
+	<meta name="keywords" content="сайт с нуля под ключ, сайты, дизайн сайта, разработка сайтов, сайты в Кыргызстане">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+
+	<title>webpack</title>
+	
+  <script type="module" crossorigin src="./src/index-c8e89c3f.js"></script>
+  <link rel="stylesheet" href="./src/index-7a8e9d3d.css">
+</head>
+<body>
+	
+<header class="header">
+  <div class="bgcb">
+    <div class="container">
+      <div class="row align-items-center py-3">
+        <div class="col">
+          <div class="text-center cw">
+            Летняя распродажа на все товары  и бесплатная экспресс-доставка – СКИДКА 50%!<a> Купить сейчас!</a></div>
+        </div>
+        <div class="col-auto">
+          <select>
+            <option value="ru">Русский</option>
+            <option value="kg">Киргизский</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container py-2">
+    <div class="pb-4 border-bottom">
+      <div class="row align-items-center">
+        <div class="col-8 col-lg-6">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="logo-name">Technotochka</div>
+            <nav class="d-none d-md-block">
+              <ul class="d-flex gap48">
+                <li> <a href="#">Главная</a></li>
+                <li> <a href="#">Контакты</a></li>
+                <li> <a href="#">О нас</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end d-none d-md-flex w-100">
+            <form class="position-relative" action="">
+              <input class="text-end form-control form-control-lg" type="text"/>
+              <button class="btn btn-search" type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Component 2">
+<path id="Vector" d="M20 20L16.2223 16.2156M18.3158 11.1579C18.3158 13.0563 17.5617 14.8769 16.2193 16.2193C14.8769 17.5617 13.0563 18.3158 11.1579 18.3158C9.2595 18.3158 7.43886 17.5617 6.0965 16.2193C4.75413 14.8769 4 13.0563 4 11.1579C4 9.2595 4.75413 7.43886 6.0965 6.0965C7.43886 4.75413 9.2595 4 11.1579 4C13.0563 4 14.8769 4.75413 16.2193 6.0965C17.5617 7.43886 18.3158 9.2595 18.3158 11.1579V11.1579Z" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+</svg>
+
+              </button>
+            </form>
+          </div>
+          <div class="d-flex justify-content-end w-100 d-block d-md-none">
+            <button class="menu-button">nkjkj</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="pt-4">
+  <div class="container"> 
+    <div class="row"> 
+      <div class="col-4">
+        <div class="left-sidebar">
+          <ul> 
+            <li> <a href="#">Кондиционеры</a></li>
+            <li> <a href="#">Кухонные плиты</a></li>
+            <li> <a href="#">Телевизоры</a></li>
+            <li> <a href="#">Холодильники</a></li>
+            <li> <a href="#">Посудомойки</a></li>
+            <li> <a href="#">Стиральные машины</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="swiper swiper1" style="max-width:850px">
+          <div class="swiper-wrapper" pagination="true">
+            <div class="swiper-slide"><img src="./img/bg-1.webp" alt=""/></div>
+            <div class="swiper-slide"><img src="./img/bg-2.webp" alt=""/></div>
+            <div class="swiper-slide"><img src="./img/bg-3.webp" alt=""/></div>
+            <div class="swiper-slide"><img src="./img/bg-4.webp" alt=""/></div>
+            <div class="swiper-slide"><img src="./img/bg-5.webp" alt=""/></div>
+            <div class="swiper-slide"><img src="./img/bg-1.webp" alt=""/></div>
+            <div class="swiper-slide"><img src="./img/bg-2.webp" alt=""/></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="py-5 border-bottom">
+    <div class="container"> 
+        <div class="d-flex align-items-center">
+          <div class="left-bdr"></div>
+          <h3 class="secT1 ps-2">Рекомендуемые</h3>
+        </div>
+      <h2 class="mt-5 mb-5">Товары со скидкой</h2>
+      <div class="row gy-4">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/holodilnik.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+                <s class="card-sec-price">14000 сом</s>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/machine.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+                <s class="card-sec-price">14000 сом</s>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/wing.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+                <s class="card-sec-price">14000 сом</s>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/tv.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+                <s class="card-sec-price">14000 сом</s>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="text-center mx-54">
+        <button class="btn btn-lg btn-danger">Посмотреть все</button>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 border-bottom">
+    <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="left-bdr"></div>
+          <h3 class="secT1 ps-2">Категории</h3>
+        </div>
+      <h2 class="mt-5 mb-5">Телевизоры</h2>
+      <div class="row g-3 align-items-center justify-content-center">
+        <div class="col text-center">
+          <div class="category-card border">
+            <object class="mb-4" type="image/svg+xml" data="./img/conditioners.svg" style="fill:'yellow'"></object>
+            <p>Кондиционеры</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-card border">
+            <object class="mb-4" type="image/svg+xml" data="./img/cooker.svg" style="fill:'yellow'"></object>
+            <p>Кухонные плиты</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-card border">
+            <object class="mb-4" type="image/svg+xml" data="./img/TV.svg" style="fill:'yellow'"></object>
+            <p>Телевизоры</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-card border">
+            <object class="mb-4" type="image/svg+xml" data="./img/wash-machine.svg" style="fill:'yellow'"></object>
+            <p>Стиральные машины</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-card border">
+            <object class="mb-4" type="image/svg+xml" data="./img/Dishwasher.svg" style="fill:'yellow'"></object>
+            <p>Посудомойки</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-card border">
+            <object class="mb-4" type="image/svg+xml" data="./img/holodilnik.svg" style="fill:'yellow'"></object>
+            <p>Посудомойки</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="left-bdr"></div>
+          <h3 class="secT1 ps-2">Категории</h3>
+        </div>
+      <h2 class="mt-5 mb-5">Поиск по категориям</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/LCD1.webp" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/machine.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/wing.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/tv.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/LCD1.webp" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/machine.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/wing.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card1">
+              <div class="img-place"><img src="./img/tv.png" alt="HAVIT HV-G92 Gamepad"/><a class="watch" href="#">Посмотреть</a></div>
+              <div class="card-title">HAVIT HV-G92 Gamepad</div>
+              <div class="price"> 
+                <div class="card-main-price">4500 сом</div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="text-center mx-54">
+        <button class="btn btn-lg btn-danger">Посмотреть все</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="bg-exclusive">
+        <div class="row gy-4">
+          <div class="col-12 col-lg-6 order-1">
+            <p class="cg fw-semibold">Товары</p>
+            <h2>Эксклюзивные товары на Technotochka успей приобрести</h2>
+            <div class="row my-4 gx-2 gx-sm-4 gy-2">
+              <div class="col-auto">
+                <div class="clock"> 
+                  <div class="counter days">23</div>
+                  <div class="desc">дней</div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="clock"> 
+                  <div class="counter hours">23</div>
+                  <div class="desc">Часов</div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="clock"> 
+                  <div class="counter min">23</div>
+                  <div class="desc">Минут</div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="clock"> 
+                  <div class="counter sec">23</div>
+                  <div class="desc">Секунд</div>
+                </div>
+              </div>
+            </div><a class="btn btn-lg btn-danger" href="#">Купить Сейчас</a>
+          </div>
+          <div class="col col-lg-6 order-0 order-lg-2">
+            <div class="w-100"><img src="./img/exclusive.webp" alt="exclusive goods"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="left-bdr"></div>
+          <h3 class="secT1 ps-2">Товары на сегодня</h3>
+        </div>
+      <h2 class="mt-5 mb-5">Новое поступление</h2>
+      <div class="row gy-4">
+        <div class="col-12 col-lg-6">
+          <div class="main-block d-flex flex-column h-100 border">
+            <div class="text-center h-100"><img class="text-center flex-fill" src="./img/opend-refrigerator.png" alt="Холодильник Haier HRF-535DM7RU"/></div>
+            <h3 class="my-3 desc-title cw">Холодильник Haier HRF-535DM7RU</h3><a class="cw" href="#">Купить Сейчас</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="d-flex flex-column h-100">
+            <div class="bgcb px-4 w-100 py-5 mb-4 flex1">
+              <div class="d-flex flex-column flex-sm-row align-items-center">
+                <div class="order-1"> 
+                  <h3 class="my-3 desc-title cw">LED телевизор Haier 32 S1</h3><a class="cw" href="#">Купить Сейчас</a>
+                </div>
+                <div class="order-0 order-sm-2"><img src="./img/LCD2.png" alt="LED телевизор Haier 32 S1"/></div>
+              </div>
+            </div>
+            <div class="row gx-4 gx-md-2 gx-xl-3 gy-4 flex1">
+              <div class="col-12 col-sm-6">
+                <div class="secondary-block">
+                  <div class="img-place text-center"><img class="text-center" src="./img/conditioner.png" alt="LED телевизор Haier 32 S1"/></div>
+                  <div>
+                    <h3 class="my-3 desc-title cw">Speakers</h3><a class="cw" href="#">Купить Сейчас</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="secondary-block">
+                  <div class="img-place text-center"><img class="text-center" src="./img/wash-machine.png" alt="LED телевизор Haier 32 S1"/></div>
+                  <div>
+                    <h3 class="my-3 desc-title cw">Perfume</h3><a class="cw" href="#">Купить Сейчас</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+            <div class="icon-block">
+              <div class="icon-nested-block">
+                <object type="image/svg+xml" data="./img/icon-delivery.svg"></object>
+              </div>
+            </div>
+            <h5 class="text-center ttu">БЫСТРАЯ ДОСТАВКА</h5>
+            <p>Бесплатная доставка для всех заказов на сумму более 5000 сом</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+            <div class="icon-block">
+              <div class="icon-nested-block">
+                <object type="image/svg+xml" data="./img/icon-сustomer-service.svg"></object>
+              </div>
+            </div>
+            <h5 class="text-center ttu">Техническое обслуживание</h5>
+            <p>Дружелюбная круглосуточная поддержка клиентов</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+            <div class="icon-block">
+              <div class="icon-nested-block">
+                <object type="image/svg+xml" data="./img/garanty.svg"></object>
+              </div>
+            </div>
+            <h5 class="text-center ttu">ГАРАНТИЯ на технику</h5>
+            <p>Возвращаем деньги в течение 30 дней</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="row"> 
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="logo-name">Technotochka</div>
+        <p class="mt-3">We build readymade websites, mobile applications, and elaborate online business services.</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <p>О нас</p>
+        <p class="mt-3">Контакты</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <p>Условия возврата и обмена</p>
+        <p class="mt-3">Как сделать заказ</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <p class="fs-3 cw">+996777654321</p>
+        <p class="mt-3">901 N Pitt Str., Suite 170 Alexandria, VA 22314, USA</p>
+      </div>
+    </div>
+  </div>
+</footer>
+	<audio controls loop style="opacity: 0.5;">
+		<source src="./img/audio.mp3" type="audio/mp3">
+	</audio>
+<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "EVA STUDIO",
+	  "description": "IT-компания в Бишкеке, Кыргызстан. Мы предоставляем широкий спектр IT-услуг и продуктов по всему миру.",
+	  "telephone": "+996 (55) 394-49-55",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Улица, Дом",
+		"addressLocality": "Бишкек",
+		"addressRegion": "Чуйская область",
+		"postalCode": "720000",
+		"addressCountry": "Кыргызстан"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": "42.8746",
+		"longitude": "74.5698"
+	  },
+	  "priceRange": "from 1000$ to 2,000,000 $",
+	  "currenciesAccepted": "KGS, USD, EUR, RUB",
+	  "paymentAccepted": "Credit Card, PayPal",
+	  "openingHours": "Mo-Su 24/7",
+	  "areaServed": "Worldwide",
+	  "hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "Спектр Услуг",
+		"description": "Широкий спектр IT-услуг, предоставляемых EVA STUDIO.",
+		"itemListElement": [
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "E-COMMERCE",
+			  "description": "Разработка и поддержка интернет-магазинов.",
+			  "category": "E-Commerce",
+			  "serviceType": "E-Commerce Development"
+			}
+		  },
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "WEB-DEVELOPMENT",
+			  "description": "Разработка современных веб-сайтов.",
+			  "category": "Web Development",
+			  "serviceType": "Web Design & Development"
+			}
+		  },
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "MOBILE-DEVELOPMENT",
+			  "description": "Разработка мобильных приложений для iOS и Android.",
+			  "category": "Mobile Development",
+			  "serviceType": "Mobile App Development"
+			}
+		  },
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "CUSTOM-DEVELOPMENT",
+			  "description": "Разработка индивидуальных IT-решений.",
+			  "category": "Custom Development",
+			  "serviceType": "Custom Software Development"
+			}
+		  },
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "АНАЛИЗ ДАННЫХ",
+			  "description": "Обработка и анализ данных для принятия бизнес-решений.",
+			  "category": "Data Analysis",
+			  "serviceType": "Data Analysis Services"
+			}
+		  },
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "3Д-МОДЕЛИРОВАНИЕ",
+			  "description": "Создание трехмерных моделей и визуализаций.",
+			  "category": "3D Modeling",
+			  "serviceType": "3D Modeling Services"
+			}
+		  },
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "ПРОЕКТИРОВАНИЕ АРХИТЕКТУРНЫХ ЗДАНИЙ",
+			  "description": "Проектирование архитектурных объектов.",
+			  "category": "Architectural Design",
+			  "serviceType": "Architectural Design Services"
+			}
+		  }
+		}
+	}
+</script>
+
+</body>
+
+</html>
