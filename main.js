@@ -24,6 +24,9 @@ const swiper1 = new Swiper('.swiper1', {
 	// effect: 'fade',
 	direction: 'horizontal',
 	// disableOnInteraction:false,
+	autoplay: {
+		delay: 1500,
+	},
 	loop:true,
 	autoHeight:true,
 	pagination: {
