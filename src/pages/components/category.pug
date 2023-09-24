@@ -1,0 +1,13 @@
+include ../mixins/note1
+include ../mixins/card
+- var arr = [{title:'Кондиционеры', src:'../img/conditioners.svg'},	{title:'Кухонные плиты', src:'../img/cooker.svg'},{title:'Телевизоры', src:'../img/TV.svg'}, {title:'Стиральные машины', src:'../img/wash-machine.svg'}, {title:'Посудомойки', src:'../img/Dishwasher.svg'}, {title:'Посудомойки', src:'../img/holodilnik.svg'},]
+section.py-5.border-bottom
+	.container
+		+note1('Категории')
+		h2.mt-5.mb-5 Телевизоры
+		.row.g-3.align-items-center.justify-content-center
+			each val in arr
+				.col.text-center
+					.category-card.border
+						object.mb-4(type="image/svg+xml", data=val.src, style="fill:'yellow'")
+						p=val.title

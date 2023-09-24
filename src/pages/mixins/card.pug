@@ -1,0 +1,12 @@
+
+mixin card1(title,src, price1, price2,discount,searched)
+	.card1
+		.img-place
+			img(src=src, alt=title)
+			a.watch(href="#") Посмотреть
+		.card-title=title
+		.price 
+			.card-main-price=price1 
+			if searched
+				s.card-sec-price=price2
+

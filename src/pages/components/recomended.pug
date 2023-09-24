@@ -1,0 +1,19 @@
+include ../mixins/note1
+include ../mixins/card
+section.py-5.border-bottom
+    .container 
+        +note1('Рекомендуемые')
+        h2.mt-5.mb-5 Товары со скидкой
+        //- each val in {title:'HAVIT HV-G92 Gamepad', src:'img/holodilnik.png'}
+        .row.gy-4
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/holodilnik.png', '4500 сом', '14000 сом', '40%',true)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/machine.png', '4500 сом', '14000 сом', '40%', true)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/wing.png', '4500 сом', '14000 сом', '40%',true)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/tv.png', '4500 сом', '14000 сом', '40%',true)
+        .text-center.mx-54
+            button.btn.btn-lg.btn-danger Посмотреть все
+        

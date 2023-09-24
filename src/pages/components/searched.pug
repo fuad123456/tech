@@ -1,0 +1,27 @@
+include ../mixins/note1
+include ../mixins/card
+- var arr = [{title:'Breed Dry Dog Food', src:'../img/conditioners.svg'},	{title:'Кухонные плиты', src:'../img/cooker.svg'},{title:'Телевизоры', src:'../img/TV.svg'}, {title:'Стиральные машины', src:'../img/wash-machine.svg'}, {title:'Посудомойки', src:'../img/Dishwasher.svg'}, {title:'Посудомойки', src:'../img/holodilnik.svg'},]
+section.py-5
+    .container
+        +note1('Категории')
+        h2.mt-5.mb-5 Поиск по категориям
+        .row.g-3
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/LCD1.webp', '4500 сом', '14000 сом', '40%',false)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/machine.png', '4500 сом', '14000 сом', '40%', false)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/wing.png', '4500 сом', '14000 сом', '40%', false)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/tv.png', '4500 сом', '14000 сом', '40%', false)
+        .row.g-3
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/LCD1.webp', '4500 сом', '14000 сом', '40%',false)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/machine.png', '4500 сом', '14000 сом', '40%', false)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/wing.png', '4500 сом', '14000 сом', '40%', false)
+            .col-12.col-md-6.col-lg-3
+                +card1('HAVIT HV-G92 Gamepad', '../img/tv.png', '4500 сом', '14000 сом', '40%', false)
+        .text-center.mx-54
+            button.btn.btn-lg.btn-danger Посмотреть все

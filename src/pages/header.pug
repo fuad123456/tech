@@ -1,0 +1,34 @@
+header.header
+    .bgcb
+        .container
+            .row.align-items-center.py-3
+                .col
+                    .text-center.cw Летняя распродажа на все товары  и бесплатная экспресс-доставка – СКИДКА 50%!
+                        |
+                        a  Купить сейчас!
+                .col-auto
+                    select
+                        option(value="ru") Русский
+                        option(value="kg") Киргизский
+    .container.py-2
+        .pb-4.border-bottom
+            .row.align-items-center
+                .col-8.col-lg-6
+                    .d-flex.justify-content-between.align-items-center
+                        .logo-name Technotochka
+                        nav.d-none.d-md-block
+                            ul.d-flex.gap48
+                                li 
+                                    a(href="#") Главная
+                                li 
+                                    a(href="#") Контакты
+                                li 
+                                    a(href="#") О нас
+                .col
+                    .d-flex.justify-content-end.d-none.d-md-flex.w-100
+                        form.position-relative(action="")
+                            input.text-end.form-control.form-control-lg(type="text")
+                            button.btn.btn-search(type="submit")
+                                include ../assets/img/search.svg
+                    .d-flex.justify-content-end.w-100.d-block.d-md-none
+                        button.menu-button nkjkj

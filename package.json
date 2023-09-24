@@ -1,0 +1,27 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "pug": "^3.0.2",
+    "sass": "^1.64.2",
+    "vite": "^4.4.9",
+    "vite-plugin-pug": "^0.3.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.1",
+    "swiper": "^10.2.0",
+    "vite-svg-loader": "^4.0.0"
+  }
+}
