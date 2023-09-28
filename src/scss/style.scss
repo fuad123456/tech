@@ -75,6 +75,22 @@ header a{
 		transition: 0.5s ease-in-out;
 	}
 }
+.menu{
+	transition: linear all 0.5s;
+	transition: height 0.5s ease; /* Добавляем переход для свойства height */
+	overflow: hidden; /* Скрываем лишний контент, если блок будет меньше */
+	height: 0;
+	position: absolute;
+	z-index: 100;
+	background-color: #fff;
+	width: 100%;
+}
+.close{
+	padding: 0;
+	border: inherit;
+	border: none;
+	background-color: inherit;
+}
 .logo-name{
 	color: #DB4444;
 	font-family: 'Inter', sans-serif;
@@ -88,14 +104,15 @@ img{
 	max-width: 100%;
 }
 .left-sidebar{
-	border-radius: 16px;
-	border: 1px solid rgb(80, 163, 80);
-	border-left: 3px solid rgb(80, 163, 80);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-left: 4px solid rgb(80, 163, 80);
 	ul{
 		display: flex;
 		flex-direction: column;
 		li{
 			padding: 19.5px 24px;
+			border-radius: 5px;
 			&:hover{
 				background-color: #DB4444;
 				transform: translateX(5px);
@@ -104,6 +121,9 @@ img{
 					color: #ffffff;
 				}
 			}
+			@media screen and (max-width:1400px) {
+				padding: 16px 24px;
+			}
 			a{
 				color: #000;
 				font-family: 'Poppins', sans-serif;
@@ -111,9 +131,17 @@ img{
 				font-style: normal;
 				font-weight: 250;
 				line-height: 150%;
+				padding-bottom: 2px;
+				&:hover{
+					transition: all 0.5s ease-in-out;
+					border-bottom: 1px solid #c6c7dc;
+				}
 			}
 		}
 	}
+}
+.swiper1{
+	max-width: 100%;
 }
 .card1{
 	display: flex;

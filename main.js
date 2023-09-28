@@ -58,3 +58,23 @@ window.addEventListener('click',function(e){
 		searchByCategory(e.target)
 	}
 })
+
+//Toggle close menu
+let menuBtn=document.querySelector('.mb')
+const closeBtn = document.querySelector('.close')
+menuBtn.addEventListener('click',toggleHeight)
+closeBtn.addEventListener('click',toggleHeight)
+function toggleHeight() {
+	const block = document.querySelector('.menu');
+	if (block.clientHeight ==0 ){
+		block.style.height = `${block.scrollHeight}px`
+	} else {
+		block.style.height = '0'
+	}
+	const logo =document.querySelector('.logo')
+	let positionMenuBtn = menuBtn.getBoundingClientRect()
+	closeBtn.style.top= positionMenuBtn.top+'px'
+	closeBtn.style.left= positionMenuBtn.left+'px'
+	console.log(block.clientHeight);
+	console.log(block.scrollHeight);
+  }
