@@ -85,6 +85,9 @@ header a{
 	background-color: #fff;
 	width: 100%;
 }
+.menu-button{
+	padding: 0;
+}
 .close{
 	padding: 0;
 	border: inherit;
@@ -367,6 +370,7 @@ img{
 	position: absolute;
 	top: 5px;
 	right: 0;
+	
 }
 // UTILITIES
 .gap48{
@@ -374,7 +378,6 @@ img{
 }
 .btn{
 	color: #ffffff !important;
-	padding: 0;
 }
 .bgc-r{
 	background-color: #DB4444;
