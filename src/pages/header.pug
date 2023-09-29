@@ -27,18 +27,22 @@ header.header
 				.col
 					.d-flex.justify-content-end.d-none.d-md-flex.w-100
 						form.position-relative(action="")
-							input.text-end.form-control.form-control-lg(type="text")
+							input.form-control.form-control-lg(type="text")
 							button.btn.btn-search(type="submit")
 								include ../assets/img/search.svg
 					.d-flex.justify-content-end.w-100.d-block.d-md-none
-						button.menu-button.mb
-							object(type="image/svg+xml", data='/img/burger.svg', style="width:30px")
-							//- include ../../public/img/burger.svg
-	ul.menu
-		.container-fluid.bg-brown.menu-mob.pt-3.rounded-bottom-5.d-block.d-md-none
-			button.btn.close(aria-label="Aria Close")
-				include ../assets/img/close.svg
+						button.btn.menu-button
+							//- object(type="image/svg+xml", data='/img/burger.svg', style="width:30px")
+							include ../../public/img/burger.svg
+	ul.menu.d-block.d-md-none
+		.container-fluid.bg-brown.menu-mob.pt-3.rounded-bottom-5
+			//- button.btn.close(aria-label="Aria Close")
+			//- 	include ../assets/img/close.svg
 			.d-flex.flex-column.justify-content-center
 				each val, key in {main:'Главная', contacts:'Контакты', about:'О нас'}
-					li.text-center.my-4
+					li.text-center.my-2.my-sm-3
 						a(href='#'+key class='cb')= val
+				li.pb-2.position-relative.z-100
+					input.form-control.form-control-lg(type="text")
+					button.btn.btn-search(type="submit")
+						include ../assets/img/search.svg

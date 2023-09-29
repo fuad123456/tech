@@ -374,6 +374,7 @@ img{
 }
 .btn{
 	color: #ffffff !important;
+	padding: 0;
 }
 .bgc-r{
 	background-color: #DB4444;
@@ -399,4 +400,7 @@ img{
 }
 .ttu{
 	text-transform: uppercase;
+}
+.z-100{
+	z-index: 100;
 }

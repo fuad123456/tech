@@ -60,10 +60,8 @@ window.addEventListener('click',function(e){
 })
 
 //Toggle close menu
-let menuBtn=document.querySelector('.mb')
-const closeBtn = document.querySelector('.close')
+let menuBtn=document.querySelector('.menu-button')
 menuBtn.addEventListener('click',toggleHeight)
-closeBtn.addEventListener('click',toggleHeight)
 function toggleHeight() {
 	const block = document.querySelector('.menu');
 	if (block.clientHeight ==0 ){
@@ -71,10 +69,10 @@ function toggleHeight() {
 	} else {
 		block.style.height = '0'
 	}
-	const logo =document.querySelector('.logo')
-	let positionMenuBtn = menuBtn.getBoundingClientRect()
-	closeBtn.style.top= positionMenuBtn.top+'px'
-	closeBtn.style.left= positionMenuBtn.left+'px'
-	console.log(block.clientHeight);
-	console.log(block.scrollHeight);
+	// const logo =document.querySelector('.logo')
+	// let positionMenuBtn = menuBtn.getBoundingClientRect()
+	// closeBtn.style.top= positionMenuBtn.top+'px'
+	// closeBtn.style.left= positionMenuBtn.left+'px'
+	// console.log(block.clientHeight);
+	// console.log(block.scrollHeight);
   }
