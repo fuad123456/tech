@@ -10,3 +10,18 @@ mixin card1(title,src, price1, price2,discount,searched)
 			if searched
 				s.card-sec-price=price2
 
+mixin card2(title,src, price1, price2,desc,href)
+	a(href=href) 
+		.filter-card.mb-4
+			.col-auto
+				.fil
+					.img-place
+						img(src=src, alt=title)
+			.col
+				h4.card-title=title
+				.price
+					.card-main-price=price1
+					s.card-sec-price=price2
+				.desc.mt-1=desc
+				button.btn.btn-lg.btn-danger.mt-4.px-4 Купить: +996777776655
+

@@ -4,18 +4,38 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Купите бытовую технику в Бишкеке с доставкой на дом. В нашем интернет-магазине вы найдете широкий выбор холодильников, кондиционеров, стиральных машин, кухонных плит и телевизоров по выгодным ценам.">
-	<meta name="keywords" content="бытовая техника, холодильники, кондиционеры, стиральные машины, кухонные плиты, телевизоры, Бишкек, доставка">
+	<meta name="description"
+		content="Купите бытовую технику в Бишкеке с доставкой на дом. В нашем интернет-магазине вы найдете широкий выбор холодильников, кондиционеров, стиральных машин, кухонных плит и телевизоров по выгодным ценам.">
+	<meta name="keywords"
+		content="бытовая техника, холодильники, кондиционеры, стиральные машины, кухонные плиты, телевизоры, Бишкек, доставка">
 	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-
+	<!-- <link rel="stylesheet" href="style.css"> -->
 	<title>Tecnotochka</title>
 
 </head>
+
 <body>
-	<pug src="./index.pug" />
 	<pug src="./src/filter.pug" />
-	<script type="module" src="./main.js"></script>
-<script type="application/ld+json">
+
+	<script type="module" src="../mainFilter.js"></script>
+	<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+	
+	<script type="importmap">
+		{
+		  "imports": {
+			"@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+			"bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.esm.min.js"
+		  }
+		}
+		</script>
+	<script type="module">
+		import * as bootstrap from 'bootstrap'
+
+		new bootstrap.Popover(document.getElementById('popoverButton'))
+	</script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+	<script type="application/ld+json">
+
 	{
 	  "@context": "http://schema.org",
 	  "@type": "LocalBusiness",

@@ -1,0 +1,41 @@
+
+include mixins/card
+section#filter-section
+	.container
+		.row.gx-2.mb-4
+			.col-auto
+				a(href="/").cgr Главная
+			.col-auto /
+			.col-auto Холодильники
+		.row
+			.col-3
+				include components/aside
+			.col
+				.searched-block
+					.d-flex.justify-content-between.align-tems-center
+						.finded 72 из 189 товаров
+						.filter-block
+							.row
+								.col-auto
+									form(action="") 
+										select.form-select(name="")
+											option(value="popular") По популярности
+											option(value="price") По цене
+								.col-auto
+									button.toggle-btn.filter-btn.block-pos.active(type="button")
+										img(src="../img/vertical-pos.svg", alt="")
+								.col-auto
+									div
+										button.toggle-btn.filter-btn.full-row(type="button")
+											img(src="../img/burger-pos.svg", alt="")
+				.row.cards.block-position.mt-4
+					.col-4.card-cols
+						+card2('Холодильник Haier HRF-535DM7RU','../img/holodilnik-f.webp','4500 сом', '14000 сом', 'Большой дверной карман позволяет хранить в двери высокие упаковки с продуктами. В этот карман вы можете поместить большие упаковки молока ...', '../../card.html' )
+					.col-4.card-cols
+						+card2('Холодильник Haier HRF-535DM7RU','../img/holodilnik-f.webp','4500 сом', '14000 сом', 'Большой дверной карман позволяет хранить в двери высокие упаковки с продуктами. В этот карман вы можете поместить большие упаковки молока ...' )
+					.col-4.card-cols
+						+card2('Холодильник Haier HRF-535DM7RU','../img/holodilnik-f.webp','4500 сом', '14000 сом', 'Большой дверной карман позволяет хранить в двери высокие упаковки с продуктами. В этот карман вы можете поместить большие упаковки молока ...' )
+					.col-4.card-cols
+						+card2('Холодильник Haier HRF-535DM7RU','../img/holodilnik-f.webp','4500 сом', '14000 сом', 'Большой дверной карман позволяет хранить в двери высокие упаковки с продуктами. В этот карман вы можете поместить большие упаковки молока ...' )
+					.col-4.card-cols
+						+card2('Холодильник Haier HRF-535DM7RU','../img/holodilnik-f.webp','4500 сом', '14000 сом', 'Большой дверной карман позволяет хранить в двери высокие упаковки с продуктами. В этот карман вы можете поместить большие упаковки молока ...' )

@@ -1,0 +1,78 @@
+
+aside
+	.aside-category.mb-3
+		.d-flex.justify-content-between
+			h4 Категории1
+			button.btn(type="button", data-bs-toggle="collapse", data-bs-target="#collapseExample", aria-expanded="false", aria-controls="collapseExample")
+				include ../../../public/img/expand_less.svg
+		.collapse#collapseExample
+			form(action="") 
+				.form-check.mt-12
+					input(type="checkbox" name="Кондиционеры" id="condition" aria-label="Checkbox for following text input").form-check-input
+					label(for="condition").ms-2.form-check-label Кондиционеры
+				.form-check.mt-12
+					input(type="checkbox" name="Кондиционеры" id="cooker" aria-label="Checkbox for following text input").form-check-input
+					label(for="cooker").ms-2.form-check-label Кухонные плиты
+				.form-check.mt-12
+					input(type="checkbox" name="Кондиционеры" id="tv" aria-label="Checkbox for following text input").form-check-input
+					label(for="tv").ms-2.form-check-label Телевизоры
+				.form-check.mt-12
+					input(type="checkbox" name="Кондиционеры" id="washer" aria-label="Checkbox for following text input").form-check-input
+					label(for="washer").ms-2.form-check-label Стиральные машины
+				.form-check.mt-12
+					input(type="checkbox" name="Кондиционеры" id="Dishwashers" aria-label="Checkbox for following text input").form-check-input
+					label(for="Dishwashers").ms-2.form-check-label Посудомойки
+	.aside-category.mb-3
+		.d-flex.justify-content-between
+			h4 Бренды
+			button.btn(type="button", data-bs-toggle="collapse", data-bs-target="#collapseExample1", aria-expanded="false", aria-controls="collapseExample1")
+				include ../../../public/img/expand_less.svg
+		.collapse#collapseExample1
+			form(action="") 
+				.form-check.mt-12
+					input(type="checkbox" name="Samsung" id="Samsung" aria-label="Checkbox for following text input").form-check-input
+					label(for="Samsung").ms-2.form-check-label Samsung
+				.form-check.mt-12
+					input(type="checkbox" name="Apple" id="Apple" aria-label="Checkbox for following text input").form-check-input
+					label(for="Apple").ms-2.form-check-label Apple
+				.form-check.mt-12
+					input(type="checkbox" name="Huawei" id="Huawei" aria-label="Checkbox for following text input").form-check-input
+					label(for="Huawei").ms-2.form-check-label Huawei
+				.form-check.mt-12
+					input(type="checkbox" name="Pocco" id="Pocco" aria-label="Checkbox for following text input").form-check-input
+					label(for="Pocco").ms-2.form-check-label Pocco
+				.form-check.mt-12
+					input(type="checkbox" name="Lenovo" id="Lenovo" aria-label="Checkbox for following text input").form-check-input
+					label(for="Lenovo").ms-2.form-check-label Lenovo
+	.aside-category.mb-3
+		h4.mb-3 Цена
+		form
+			input(type="range", name="" min="0" max="10000" class="multi-range mb-3 w-100" id="customRange1")
+			.row 
+				.col-6
+					label(for="min") Min 
+					input(type="number", name="" class="form-control" id="min" placeholder="0")
+				.col-6
+					label(for="max") Max
+					input(type="number", name="" class="form-control" id="max" placeholder="99999")
+	.aside-category.mb-3
+		.d-flex.justify-content-between
+			h4 Тип
+			button.btn(type="button", data-bs-toggle="collapse", data-bs-target="#collapseExample2", aria-expanded="false", aria-controls="collapseExample1")
+				include ../../../public/img/expand_less.svg
+		.collapse#collapseExample2
+			.form-check.mt-12
+				input(type="checkbox" name="Samsung" id="Samsung" aria-label="Checkbox for following text input").form-check-input
+				label(for="Samsung").ms-2.form-check-label Samsung
+			.form-check.mt-12
+				input(type="checkbox" name="Apple" id="Apple" aria-label="Checkbox for following text input").form-check-input
+				label(for="Apple").ms-2.form-check-label Apple
+			.form-check.mt-12
+				input(type="checkbox" name="Huawei" id="Huawei" aria-label="Checkbox for following text input").form-check-input
+				label(for="Huawei").ms-2.form-check-label Huawei
+			.form-check.mt-12
+				input(type="checkbox" name="Pocco" id="Pocco" aria-label="Checkbox for following text input").form-check-input
+				label(for="Pocco").ms-2.form-check-label Pocco
+			.form-check.mt-12
+				input(type="checkbox" name="Lenovo" id="Lenovo" aria-label="Checkbox for following text input").form-check-input
+				label(for="Lenovo").ms-2.form-check-label Lenovo

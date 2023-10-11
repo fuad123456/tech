@@ -1,0 +1,95 @@
+section#card-section
+	.container
+		.row.gx-2.mb-4
+			.col-auto
+				a(href="/").cgr Главная
+			.col-auto /
+			.col-auto
+				a(href="").cgr Холодильники
+			.col-auto /
+			.col-auto HAVIT HV-G92 Gamepad
+		.card-main-section
+			.row.gy-4
+				.col-12.col-xl-auto
+					.view-goods-block
+						.view-goods.active
+							img(src="./img/holodilnik.png", alt="")
+						.view-goods
+							img(src="./img/holodilnik.png", alt="")
+						.view-goods
+							img(src="./img/holodilnik.png", alt="")
+						.view-goods
+							img(src="./img/holodilnik.png", alt="")
+				.col-12.col-lg-6
+					.main-view
+						img(src="./img/holodilnik-big.png", alt="")
+				.col-12.col-lg
+					.description
+						h2.title.mb-3 Havic HV G-92 Gamepad
+						.isHas.mb-3 В наличии
+						.price.mb-5 14000 сом
+						hr
+						.colors 
+							form(action="#")
+								.d-flex
+									p Цвета:
+									.radios.ms-4
+										input(type="radio", name="color" checked value="silver" id="silver")
+										label(for="silver")
+										input(type="radio", name="color" value="red" id="red")
+										label(for="red")
+										input(type="radio", name="color" value="blue" id="blue")
+										label(for="blue") 
+								<div class="output" id="output"></div>
+						hr
+						button.btn.btn-lg.btn-danger.w-100 Позвонить
+						.delivery
+							.row.align-items-center
+								.col-auto
+									img(src="./img/icon-delivery2.svg", alt="")
+								.col
+									div БЫСТРАЯ ДОСТАВКА
+									div Закажи сеейчас и получи доставку уже сегодня
+section#card-description
+	.container.border-top
+		.row
+			.col-12.col-lg-6
+				.desciption-goods-item.pt-3
+					h3.mb-3 Описание
+					p Большой дверной карман позволяет хранить в двери высокие упаковки с продуктами. В этот карман вы можете поместить большие упаковки молока и сока или два ряда бутылок или банок с напитками. В результате у вас освобождается больше места на полках для размещения продуктов к большой вечеринке!
+			.col-12.col-lg-6.border-start
+				.desciption-goods-item.pt-3
+					h3.mb-3 Общие характеристики
+					.d-flex.justify-content-between
+						.w-100
+							.d-flex.justify-content-between.mb-3
+								.row.gx-2.gx-sm-4
+									.col-auto
+										img.d-xs-n(src="./img/info.svg", alt="info")
+									.col-auto
+										.pe-2 Полезный объем
+								.text-nowrap 328 л
+							.d-flex.justify-content-between.mb-3
+								.ms-2.ms-sm-5 Высота
+								.text-nowrap 328 л
+							.d-flex.justify-content-between.mb-3
+								.ms-5 Глубина
+								.text-nowrap 328 л
+							.d-flex.justify-content-between.mb-3
+								.ms-5 Класс энергопотребления объем
+								.text-nowrap 328 л
+							.d-flex.justify-content-between.mb-3
+								.row.gx-2.gx-sm-4
+									.col-auto
+										img.d-xs-n(src="./img/info.svg", alt="info")
+									.col-auto
+										.pe-2 Размораживание холодильной камеры
+								.text-nowrap 328 л
+							.d-flex.justify-content-between.mb-3
+								.row.gx-2.gx-sm-4
+									.col-auto
+										img.d-xs-n(src="./img/info.svg", alt="info")
+									.col-auto
+										.pe-2 Размораживание морозильной камеры
+								.text-nowrap 328 л
+include recomended

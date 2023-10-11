@@ -1,25 +1,24 @@
-import { defineConfig } from "vite"
+// import { defineConfig } from "vite"
 import pugPlugin from "vite-plugin-pug"
 import svgLoader from 'vite-svg-loader';
-const purgecss = require('@fullhuman/postcss-purgecss')
-
+import { defineConfig, loadEnv } from "vite";
+import { fileURLToPath, URL } from "node:url";
+import { rollup } from 'rollup';
+import pug from 'rollup-plugin-pug';
 const path = require('path')
 const options = { pretty: true } // FIXME: pug pretty is deprecated!
 const locals = { name: "My Pug" }
+// const env = loadEnv(mode, process.cwd(), "");
 
 export default defineConfig( {
-	plugins: [pugPlugin(options, locals),svgLoader(),purgecss({
-		content: ['./**/*.html']
-	  })],
-	// root: path.resolve(__dirname, 'src'),
+	plugins: [pugPlugin(options, locals),svgLoader()],
 	build: {
-		outDir: './dist',
+		// outDir: './dist',
 		assetsDir: './src',
 		assetsInlineLimit: 0,
-		copyPublicDir:true
+		copyPublicDir:true,
 	},
 	base: './',
-	// base:'/src',
 	server: {
 		port: 4444
 	}

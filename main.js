@@ -1,9 +1,12 @@
+import { version } from './package.json';
+
+
 // Import our custom CSS
 import './src/scss/style.scss'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './node_modules/swiper/swiper-bundle.min.css';
-
+import headerTogglerMenu from './src/helpers/headerTogglerMenu';
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 import Swiper from 'swiper';
@@ -11,8 +14,8 @@ import { Autoplay, Pagination} from 'swiper/modules'
 import { Navigation} from 'swiper/modules';
 //UTILS
 import {searchByCategory} from './src/helpers/utils'
+// import pug from 'pug'///ТАКАЯ БАГА ХРЕН НАЙДЕШЬ!!
 // Регистрируем модули Navigation и Pagination
-// Swiper.use([Autoplay]);
 Swiper.use([ Autoplay,Navigation, Pagination]);
 
 // Create an example popover
@@ -36,7 +39,7 @@ const swiper1 = new Swiper('.swiper1', {
 	  },
 }
 )
-
+headerTogglerMenu()
 
 const daysEl=document.querySelector('.days')
 const hoursEl=document.querySelector('.hours')
@@ -60,19 +63,6 @@ window.addEventListener('click',function(e){
 })
 
 //Toggle close menu
-let menuBtn=document.querySelector('.menu-button')
-menuBtn.addEventListener('click',toggleHeight)
-function toggleHeight() {
-	const block = document.querySelector('.menu');
-	if (block.clientHeight ==0 ){
-		block.style.height = `${block.scrollHeight}px`
-	} else {
-		block.style.height = '0'
-	}
-	// const logo =document.querySelector('.logo')
-	// let positionMenuBtn = menuBtn.getBoundingClientRect()
-	// closeBtn.style.top= positionMenuBtn.top+'px'
-	// closeBtn.style.left= positionMenuBtn.left+'px'
-	// console.log(block.clientHeight);
-	// console.log(block.scrollHeight);
-  }
+export default function () {
+	console.log('version ' + version);
+}

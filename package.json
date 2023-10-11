@@ -1,19 +1,22 @@
 {
-  "name": "my-project",
+  "name": "technotochka",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"build:pug": "npx pug-cli card.pug --out dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@rollup/plugin-json": "^6.0.0",
     "pug": "^3.0.2",
+    "rollup-plugin-pug": "^1.1.1",
     "sass": "^1.64.2",
     "vite": "^4.4.9",
     "vite-plugin-pug": "^0.3.2"
