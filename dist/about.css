@@ -1,0 +1,48 @@
+.about {
+    background-image: url('./img/portrait-two-african-females-holding-shopping-bags-while-reacting-something-their-smartphone\ 1.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.work-with {
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #dc3545;
+	height: 637px;
+	padding: 0;
+}
+@media screen and (max-width: 1200px) {
+	.about {
+		background-position: 500px center;
+	}
+	.work-with {
+		background-position: 570px center;
+		height: 560px;
+	}
+}
+@media screen and (max-width: 1160px) {
+	.work-with {
+		background-position: 600px center;
+		height: 560px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.about {
+		background-position: 540px center;
+	}
+	.work-with {
+		background-position: 450px center;
+		height: 500px;
+	}
+}
+@media screen and (max-width:768px) {
+	.about {
+		background-image: none;
+	}
+	.work-with{
+		background-image: none;
+		height: auto;
+		padding: 31px 0;
+	}
+}
